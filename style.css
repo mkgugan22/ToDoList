@@ -1,0 +1,127 @@
+ /* *{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+ }
+ .container{
+    width:100%;
+    min-height: 100%vh;
+    background:linear-gradient(135deg, #153677,#4e085f);
+    padding: 10px;
+}
+.todo-app{
+   width:100%;
+   max-width: 540px;
+   background: white;
+   margin: 100px auto 30px;
+   padding: 40px 30px 50px;
+   border-radius: 40px;
+}
+.todo-app h2{
+   color: black;
+   display: flex;
+   align-items: center;
+   margin-bottom: 20px;
+}
+.todo-app h2 img{
+   width: 30px;
+   margin-left: 10px;
+}
+.row{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background: #edeef0;
+   /*these border and padding will make the alignments of box*/
+   /* border-radius: 30px;
+   padding-left: 20px;
+   margin-bottom: 25px;
+} */
+/* input{
+   flex: 1; /*it will use the full width of input box*/
+  /* border: none;
+   outline: none;
+   background: tras;
+} */ 
+*{
+   margin: 0;
+   padding: 0;
+   font-family:Arial, Helvetica, sans-serif;
+   box-sizing: border-box;
+}
+body{
+   height: 100vh; /*whole website cover view of this field*/
+   background-image: url('https://images.unsplash.com/photo-1597827452371-564d1ddb1bb8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1035&q=80');
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: hidden;
+}
+
+#main-header{
+   border-radius: 5px;
+}
+#header-title{
+   font-size: 3rem;
+   font-weight: 700;
+   text-shadow: 2px 2px 2px whitesmoke;
+}
+
+.container{
+   width: 50%;
+   margin-top: 7em;
+}
+
+
+/*to make our page responsive*/
+@media screen and( max-width: 800px){
+   .container{
+      width: 70%;
+   }
+}
+
+@media screen and( max-width: 650px){
+   .container{
+      width: 80%;
+   }
+}
+
+@media screen and( max-width: 500px){
+   .container{
+      width: 99%;
+   }
+}
+
+/*for edit and delete buttons we dont have html file it is in js so goto console and check the presence of id or class name given for each one*/
+
+.to-dos{
+   display: flex;
+   flex-direction: column;
+   padding: 1rem;
+  border-bottom: 4px solid rgb(0,0,0);
+}
+
+.content{
+   width: 100%;
+}
+
+.item .content .text{
+   font-size: 1.125rem;
+   width: 100%;
+   border-color: transparent;
+}
+
+.item .content .text:hover{
+   cursor: context-menu;
+}
+
+.item .actions{
+   display: flex;
+
+}
+.item .actions button{
+   margin-left: 0.5rem;
+   font-weight: 700;
+   font-size: 0.9rem;
+   padding: 2px 6px;
+}
