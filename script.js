@@ -66,10 +66,10 @@ itemContent.appendChild(deleteItem);
             inputItem.removeAttribute("readonly");
             inputItem.focus();
         }
-        //else{
-        //     inputItem.innerText ="edit";
-        //     inputItem.setAttribute("readonly","readonly");
-        // }
+        else{
+            inputItem.innerText ="edit";
+            inputItem.setAttribute("readonly","readonly");
+        }
     });
 
     deleteItem.addEventListener('click',(e)=>{
